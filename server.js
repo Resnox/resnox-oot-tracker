@@ -5,7 +5,7 @@ const socketIO = require('socket.io');
 const path = require('path');
 
 const PORT = 443;
-const INDEX = path.join(__dirname, 'index.html');
+const INDEX = 'https://resnox.as2pik.ovh/zeldaOnlineWorldTracker/index.html';
 
 const server = express()
   .use((req, res) => res.sendFile(INDEX) )
