@@ -17,4 +17,5 @@ io.on('connection', (socket) => {
   console.log('Client connected');
   socket.on('disconnect', () => console.log('Client disconnected'));
   socket.on('itemchanges', (data) => socket.broadcast.emit('itemchangec', data));
+  socket.on('statechanges', (data) => socket.broadcast.emit('statechangec', data));
 });
